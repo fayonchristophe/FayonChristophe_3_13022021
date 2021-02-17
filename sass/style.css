@@ -1,14 +1,12 @@
 body {
   font-family: "roboto", sans-serif;
-  font-size: 12px;
-  margin: 0;
+  margin: auto;
   padding: 0;
   max-width: 375px;
   width: 100%;
-  margin: auto;
 }
 
-h1, h2, h3, h4, h5 {
+h1 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -80,12 +78,6 @@ footer .footer i {
 /*--location--*/
 /*------------*/
 .location {
-  width: 100%;
-  height: 50px;
-  background: darkgray;
-  background: -webkit-gradient(linear, left top, left bottom, from(darkgray), color-stop(10%, #eaeaea));
-  background: linear-gradient(to bottom, darkgray 0%, #eaeaea 10%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a9a9', endColorstr='#eaeaea',GradientType=0 );
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +87,12 @@ footer .footer i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 50px;
+  background: darkgray;
+  background: -webkit-gradient(linear, left top, left bottom, from(darkgray), color-stop(10%, #eaeaea));
+  background: linear-gradient(to bottom, darkgray 0%, #eaeaea 10%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a9a9', endColorstr='#eaeaea',GradientType=0 );
 }
 
 .location .location__city {
@@ -104,9 +102,48 @@ footer .footer i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
 }
 
 .location .location__city p {
-  margin-left: 16px;
+  margin-left: 10px;
+}
+
+/*---------------*/
+/*--description--*/
+/*---------------*/
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fafafa;
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+
+.description h2 {
+  margin-top: 0px;
+  width: 250px;
+  text-align: center;
+}
+
+.description p {
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
