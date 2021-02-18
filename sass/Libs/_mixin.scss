@@ -3,3 +3,9 @@
     align-items: center;
     justify-content: center;
 }
+@mixin section-acceuil{
+    @include flex-mid;
+    flex-direction: column;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}

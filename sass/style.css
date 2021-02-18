@@ -63,6 +63,10 @@ footer .footer li {
   margin: 7.5px 0;
 }
 
+footer .footer li p {
+  font-family: "Shrikhand", cursive;
+}
+
 footer .footer a {
   color: white;
   text-decoration: none;
@@ -102,10 +106,7 @@ footer .footer i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
+  width: 45%;
 }
 
 .location .location__city p {
@@ -129,9 +130,9 @@ footer .footer i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fafafa;
   padding-bottom: 60px;
   padding-top: 50px;
+  background: #fafafa;
 }
 
 .description h2 {
@@ -145,5 +146,77 @@ footer .footer i {
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
+}
+
+.description .description__btn {
+  width: 220px;
+  line-height: 50px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(160deg, #FF79DA, #9356DC);
+}
+
+/*------------------*/
+/*--fonctionnement--*/
+/*------------------*/
+.operation {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+
+.operation ul {
+  list-style: none;
+  margin: 10px;
+  padding-left: 0px;
+}
+
+.operation ul .carte, .operation ul .contenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.operation ul .number {
+  position: relative;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 12.5px;
+  background: #9356DC;
+  color: white;
+  z-index: 1;
+}
+
+.operation ul .contenu {
+  position: absolute;
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #fafafa;
+  border: 2px solid #fafafa;
+  -webkit-box-shadow: 3px 2px 4px #f2f2f2;
+          box-shadow: 3px 2px 4px #f2f2f2;
+  border-radius: 15px;
+  padding-left: 35px;
 }
 /*# sourceMappingURL=style.css.map */

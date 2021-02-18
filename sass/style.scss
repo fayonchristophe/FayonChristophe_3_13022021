@@ -50,8 +50,13 @@ footer{
         color: white;
         margin: 0 0 20px 0;
 
+        
+
          li{
             margin: 7.5px 0;
+            p{
+                font-family: $font-secondary;
+            }
         }
              a{
                 color: white;
@@ -82,8 +87,9 @@ footer{
     
 
         .location__city{
-            @include flex-mid;
-            width: 100%;
+            display: flex;
+            align-items: center;
+            width: 45%;
             
             p{ 
                 margin-left: 10px;
@@ -96,11 +102,8 @@ footer{
 /*---------------*/
 
 .description{
-    @include flex-mid;
-    flex-direction: column;
+    @include section-acceuil;
     background: #fafafa;
-    padding-bottom: 60px;
-    padding-top: 50px;
 
         h2{
             margin-top: 0px;
@@ -114,5 +117,62 @@ footer{
             margin-right: 10px;
             text-align: center;
         }
-    
+        .description__btn{
+            width: 220px;
+            line-height:50px;
+            border: none;
+            border-radius: 50px;
+            text-align:center;
+            vertical-align:middle;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            background-image:linear-gradient(160deg, $secondary-color, $primary-color);
+        }
+}
+
+/*------------------*/
+/*--fonctionnement--*/
+/*------------------*/
+
+.operation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    ul{
+        list-style: none;
+        margin: 10px;
+        padding-left: 0px;
+        .carte, .contenu{
+            display: flex;
+            align-items: center;
+        }
+        .number{
+            position: relative;
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 12.5px;
+            background: $primary-color;
+            color: white;
+            z-index: 1;
+        }
+        .contenu{
+            position: absolute;
+            width: 300px;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background: #fafafa;
+            border: 2px solid #fafafa;
+            box-shadow: 3px 2px 4px #f2f2f2;
+            border-radius: 15px;
+            padding-left: 35px;
+        }
+    }
 }
