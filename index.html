@@ -12,13 +12,13 @@
 </head>
 <body>
     <header>
-        <img src="images\logo\ohmyfood.png" alt="logo oh my food">
+        <img src="images/logo/ohmyfood.png" alt="logo oh my food">
     </header>
     <main>
         <section class="location">
             <div class="location__city">
                 <i class="fas fa-map-marker-alt"></i>
-                <p>Paris, Belleville</p>
+                <h4>Paris, Belleville</h4>
             </div>
         </section>
         <section class="description">
@@ -28,44 +28,52 @@
         </section>
         <section class="operation">
             <h2>Fonctionnement</h2>
-            <ul>
-                <li class="carte">
-                    <div class="number">1</div>
-                    <div class="contenu">
-                        <i class="fas fa-mobile-alt"></i>
-                        <p>Choisissez un restaurant</p>
+            <div class="carte">
+                <p class="number">1</p>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+            <div class="carte">
+                <p class="number">2</p>
+                <i class="fas fa-list-ul"></i>
+                <p>Composez votre menu</p>   
+            </div>
+            <div class="carte">
+                <p class="number">3</p>
+                <i class="fas fa-store"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </section>
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants__resto">
+                <a href="palette.html">
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" class="restaurants__resto__image">
+                    <p class="restaurants__resto__nouveau">Nouveau</p>
+                </a>
+                <div class="restaurants__resto__description">
+                    <div class="restaurants__resto__description__texte">
+                        <a href="palette.html">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </a>
                     </div>
-                </li>
-            </ul>
-            <ul>
-                <li class="carte">
-                    <div class="number">2</div>
-                    <div class="contenu">
-                        <i class="fas fa-list-ul"></i>
-                        <p>Composez votre menu</p>
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li class="carte">
-                    <div class="number">3</div>
-                    <div class="contenu">
-                        <i class="fas fa-store"></i>
-                        <p>Dégustez au restaurant</p>
-                    </div>
-                </li>
-            </ul>
+                    <i class="far fa-heart restaurants__resto__description__coeurvide"></i>
+                    <i class="fas fa-heart restaurants__resto__description__coeurplein"></i>
+                </div>
+            </div>
+
+
         </section>
     </main>
     <footer>
             <ul class="footer">
                 <li><p>ohmyfood</p></li>
                 <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fas fa-hands-helping"></i></i>Devenir partenaire</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping"></i>i>Devenir partenaire</a></li>
                 <li><a href="#">Mentions Légales</a></li>
                 <li><a href="mailto:ohmyfood-paris@ohmyfood.com">Contact</a></li>
             </ul>
-        </nav>
     </footer>
 </body>
 </html>

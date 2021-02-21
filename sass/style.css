@@ -15,7 +15,7 @@ h1 {
 /*-----------*/
 header {
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +28,7 @@ header {
 }
 
 header img {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   max-width: 45%;
   height: auto;
 }
@@ -56,11 +56,11 @@ footer .footer {
   width: auto;
   list-style: none;
   color: white;
-  margin: 0 0 20px 0;
+  margin: 0 0 1.3rem 0;
 }
 
 footer .footer li {
-  margin: 7.5px 0;
+  margin: 0.5rem 0;
 }
 
 footer .footer li p {
@@ -73,9 +73,9 @@ footer .footer a {
 }
 
 footer .footer i {
-  max-width: 10px;
+  max-width: 0.625rem;
   height: auto;
-  margin-right: 12px;
+  margin-right: 1rem;
 }
 
 /*------------*/
@@ -92,14 +92,14 @@ footer .footer i {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 50px;
-  background: darkgray;
+  height: 4rem;
+  background: #a9a9a9;
   background: -webkit-gradient(linear, left top, left bottom, from(darkgray), color-stop(10%, #eaeaea));
   background: linear-gradient(to bottom, darkgray 0%, #eaeaea 10%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a9a9', endColorstr='#eaeaea',GradientType=0 );
 }
 
-.location .location__city {
+.location__city {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,8 +109,8 @@ footer .footer i {
   width: 45%;
 }
 
-.location .location__city p {
-  margin-left: 10px;
+.location__city h4 {
+  margin-left: 1rem;
 }
 
 /*---------------*/
@@ -130,43 +130,46 @@ footer .footer i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 60px;
-  padding-top: 50px;
+  padding-bottom: 3.75rem;
+  padding-top: 3.125rem;
   background: #fafafa;
 }
 
 .description h2 {
-  margin-top: 0px;
-  width: 250px;
+  margin-top: 0;
+  width: 17rem;
   text-align: center;
 }
 
 .description p {
-  margin-top: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
   text-align: center;
 }
 
-.description .description__btn {
-  width: 220px;
-  line-height: 50px;
+.description__btn {
+  width: 13.5rem;
+  line-height: 3rem;
   border: none;
-  border-radius: 50px;
+  border-radius: 3rem;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: bold;
   color: white;
   background-image: linear-gradient(160deg, #FF79DA, #9356DC);
+  -webkit-box-shadow: 2px 4px 10px #d3d3d3;
+          box-shadow: 2px 4px 10px #d3d3d3;
 }
 
 /*------------------*/
 /*--fonctionnement--*/
 /*------------------*/
 .operation {
-  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,48 +178,195 @@ footer .footer i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 60px;
-  padding-top: 50px;
+  padding-bottom: 3.75rem;
+  padding-top: 3.125rem;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
 }
 
-.operation ul {
-  list-style: none;
-  margin: 10px;
-  padding-left: 0px;
+.operation h2 {
+  margin-top: 0;
 }
 
-.operation ul .carte, .operation ul .contenu {
+.operation .carte {
+  margin: 0.8rem auto;
+  width: 90%;
+  height: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 1.6rem;
+  -webkit-box-shadow: 2px 4px 10px #d3d3d3;
+          box-shadow: 2px 4px 10px #d3d3d3;
+  cursor: pointer;
 }
 
-.operation ul .number {
-  position: relative;
-  text-align: center;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  border-radius: 12.5px;
-  background: #9356DC;
+.operation .carte:hover {
+  background-color: #f2eafb;
+}
+
+.operation .carte:hover > i {
+  color: #9356DC;
+}
+
+.operation .carte .number {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
-  z-index: 1;
+  background: #9356DC;
+  font-size: 0.8rem;
+  margin-left: -0.8rem;
 }
 
-.operation ul .contenu {
-  position: absolute;
-  width: 300px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.operation .carte i {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  color: grey;
+}
+
+.operation .carte p {
+  font-weight: bold;
+}
+
+/*------------------*/
+/*--fonctionnement--*/
+/*------------------*/
+.restaurants {
+  height: auto;
   background: #fafafa;
-  border: 2px solid #fafafa;
-  -webkit-box-shadow: 3px 2px 4px #f2f2f2;
-          box-shadow: 3px 2px 4px #f2f2f2;
-  border-radius: 15px;
-  padding-left: 35px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.restaurants h2 {
+  margin-top: 0;
+  margin-left: 0.8rem;
+}
+
+.restaurants__resto {
+  width: 95%;
+  height: 15rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 2px 4px 10px #d3d3d3;
+          box-shadow: 2px 4px 10px #d3d3d3;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.restaurants__resto__nouveau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5rem;
+  height: 1.9rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  background-color: #99E2D0;
+  color: #32b091;
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+}
+
+.restaurants__resto__image {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.restaurants__resto__description {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.8rem;
+  background-color: #fff;
+  margin-top: -0.3rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.restaurants__resto__description__texte {
+  width: 150%;
+}
+
+.restaurants__resto__description__texte a {
+  text-decoration: none;
+}
+
+.restaurants__resto__description__texte h3 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  color: black;
+}
+
+.restaurants__resto__description__texte p {
+  margin-top: 0;
+  color: grey;
+}
+
+.restaurants__resto__description__coeurvide {
+  font-size: 1.55rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  right: 0.8rem;
+  z-index: 60;
+  cursor: pointer;
+}
+
+.restaurants__resto__description__coeurvide:hover {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.restaurants__resto__description__coeurvide:hover + .restaurants__carte__description__coeurplein {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.restaurants__resto__description__coeurplein {
+  opacity: 0;
+  font-size: 1.55rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  right: 0.8rem;
+  color: #9356DC;
+  -webkit-transition: opacity 0.3s forwards;
+  transition: opacity 0.3s forwards;
 }
 /*# sourceMappingURL=style.css.map */

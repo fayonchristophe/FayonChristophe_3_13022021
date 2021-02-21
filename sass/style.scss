@@ -20,11 +20,11 @@ h1 {
 
 header {
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
     @include flex-mid;
     
     img{
-        margin-top: 10px;
+        margin-top: 0.625rem;
         max-width: 45%;
         height: auto;
     }
@@ -48,12 +48,12 @@ footer{
         width: auto;
         list-style: none;
         color: white;
-        margin: 0 0 20px 0;
+        margin: 0 0 1.3rem 0;
 
         
 
          li{
-            margin: 7.5px 0;
+            margin: 0.5rem 0;
             p{
                 font-family: $font-secondary;
             }
@@ -63,9 +63,9 @@ footer{
                 text-decoration: none;
             }
                  i{
-                    max-width: 10px;
+                    max-width: 0.625rem;
                     height: auto;
-                    margin-right: 12px;
+                    margin-right: 1rem;
                 }
 
     }
@@ -78,21 +78,21 @@ footer{
 .location{
     @include flex-mid;
     width: 100%;
-    height: 50px;  
-    background: rgb(169,169,169);
+    height: 4rem;  
+    background: #a9a9a9;
     background: -moz-linear-gradient(top,  rgba(169,169,169,1) 0%, rgba(234,234,234,1) 10%);
     background: -webkit-linear-gradient(top,  rgba(169,169,169,1) 0%,rgba(234,234,234,1) 10%);
     background: linear-gradient(to bottom,  rgba(169,169,169,1) 0%,rgba(234,234,234,1) 10%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a9a9', endColorstr='#eaeaea',GradientType=0 );
     
 
-        .location__city{
+        &__city{
             display: flex;
             align-items: center;
             width: 45%;
             
-            p{ 
-                margin-left: 10px;
+            h4{ 
+                margin-left: 1rem;
             }
         }
 }
@@ -103,32 +103,35 @@ footer{
 
 .description{
     @include section-acceuil;
-    background: #fafafa;
+    background: $font-section;
 
         h2{
-            margin-top: 0px;
-            width: 250px;
+            margin-top: 0;
+            width: 17rem;
             text-align: center;
         }
         
         p{
-            margin-top: 0px;
-            margin-left: 10px;
-            margin-right: 10px;
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            margin-left: 0.625rem;
+            margin-right: 0.625rem;
             text-align: center;
         }
-        .description__btn{
-            width: 220px;
-            line-height:50px;
+        &__btn{
+            width: 13.5rem;
+            line-height:3rem;
             border: none;
-            border-radius: 50px;
+            border-radius: 3rem;
             text-align:center;
             vertical-align:middle;
             cursor: pointer;
-            font-size: 15px;
+            font-size: 0.9rem;
             font-weight: bold;
             color: white;
             background-image:linear-gradient(160deg, $secondary-color, $primary-color);
+            @include b-shadow;
         }
 }
 
@@ -137,42 +140,159 @@ footer{
 /*------------------*/
 
 .operation{
-    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
-    padding-top: 50px;
-    ul{
-        list-style: none;
-        margin: 10px;
-        padding-left: 0px;
-        .carte, .contenu{
-            display: flex;
-            align-items: center;
+    padding-bottom: 3.75rem;
+    padding-top: 3.125rem;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    h2{
+        margin-top: 0;
+    }
+    .carte{
+        margin: 0.8rem auto;
+        width: 90%;
+        height: 4.5rem;
+        display: flex;
+        align-items: center;
+        border: 1px solid $gris-clair;
+        background-color: $gris-clair;
+        border-radius: 1.6rem;
+        @include b-shadow;
+        cursor: pointer;
+        &:hover{
+            background-color: lighten($primary-color, 35);
+            > i{
+                color: $primary-color;
+            }
         }
         .number{
-            position: relative;
-            text-align: center;
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
-            border-radius: 12.5px;
-            background: $primary-color;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            @include flex-mid;
             color: white;
-            z-index: 1;
+            background: $primary-color;
+            font-size: 0.8rem;
+            margin-left: -0.8rem;
         }
-        .contenu{
+        i{
+            margin-left: 1.25rem;
+            margin-right: 1.25rem;
+            color: grey;
+
+        }
+        p{
+            font-weight: bold;
+        }   
+    }    
+}
+
+
+/*------------------*/
+/*--fonctionnement--*/
+/*------------------*/
+
+
+.restaurants{
+    height: auto;
+    background: $font-section;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    h2{
+        margin-top: 0;
+        margin-left: 0.8rem;
+    }
+    &__resto{
+        width: 95%;
+        height: 15rem;
+        border-radius: 1rem;
+        @include b-shadow;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        &__nouveau{
+            @include flex-mid;
+            width: 5rem;
+            height: 1.9rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 0.2rem;
+            background-color: $tertiary-color;
+            color: darken( $tertiary-color, 30);
             position: absolute;
-            width: 300px;
-            margin-left: 10px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            background: #fafafa;
-            border: 2px solid #fafafa;
-            box-shadow: 3px 2px 4px #f2f2f2;
-            border-radius: 15px;
-            padding-left: 35px;
+            top: 0.8rem;
+            right: 0.8rem;
+        }
+        &__image{
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        &__description{
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem;
+            background-color: #fff;
+            margin-top: -0.3rem;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            &__texte {
+                width: 150%;
+                a{
+                text-decoration: none;
+                }
+                h3 {
+                    margin-top: 0;
+                    margin-bottom: 0.2rem;
+                    color: black;
+                }
+                p {
+                    margin-top: 0;
+                    color: grey;
+                }
+            }&__coeurvide{
+                font-size: 1.55rem;
+                margin-top: 0.5rem;
+                position: absolute;
+                right: 0.8rem;
+                z-index: 60;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    transform-origin: bottom;
+                }
+                &:hover + .restaurants__carte__description__coeurplein {
+                    opacity: 1;
+                    transition: opacity 0.8s;
+                    transform-origin: bottom;
+                }
+            }
+
+            &__coeurplein{
+                opacity: 0;
+                font-size: 1.55rem;
+                margin-top: 0.5rem;
+                position: absolute;
+                right: 0.8rem;
+                color: $primary-color;
+
+                transition: opacity 0.3s forwards;
+            }
         }
     }
+
+
+
+
+
+
+
+    
 }
+
