@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "roboto", sans-serif;
   margin: auto;
@@ -16,6 +17,13 @@ h1 {
 header {
   width: 100%;
   height: 3.75rem;
+  z-index: 30;
+}
+
+header h1 {
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,12 +33,19 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: black;
 }
 
-header img {
-  margin-top: 0.625rem;
-  max-width: 45%;
-  height: auto;
+header .btn_return {
+  width: 100%;
+  height: 100%;
+}
+
+header .retour_index {
+  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 2.3rem;
 }
 
 /*----------*/
@@ -396,6 +411,91 @@ footer .footer i {
   margin-top: 0.5rem;
   position: absolute;
   right: 0.8rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 0.4s forwards;
+  transition: opacity 0.4s forwards;
+}
+
+/*---page-menu---*/
+.entête__image {
+  width: 100%;
+  max-height: 17rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu_conteneur {
+  width: 100%;
+  position: relative;
+  top: -3.5rem;
+  background: #fafafa;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  margin-bottom: 3rem;
+  padding-top: 0.5rem;
+}
+
+.menu_conteneur__resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+}
+
+.menu_conteneur__resto h1 {
+  font-size: 1.7rem;
+}
+
+.menu_conteneur__resto__coeurvide {
+  font-size: 1.6rem;
+  position: absolute;
+  right: 2rem;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.menu_conteneur__resto__coeurvide:hover {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.menu_conteneur__resto__coeurvide:hover + .menu_conteneur__resto__coeurplein {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.menu_conteneur__resto__coeurvide:active {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.menu_conteneur__resto__coeurvide:active + .menu_conteneur__resto__coeurplein {
+  opacity: 1;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.menu_conteneur__resto__coeurplein {
+  opacity: 0;
+  font-size: 1.6rem;
+  position: absolute;
+  right: 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -21,12 +21,24 @@ h1 {
 header {
     width: 100%;
     height: 3.75rem;
+    z-index: 30;
+    h1{
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
     @include flex-mid;
-    
-    img{
-        margin-top: 0.625rem;
-        max-width: 45%;
-        height: auto;
+    color: black;
+    }
+    .btn_return{
+        width: 100%;
+        height: 100%;
+    }
+    .retour_index{
+        color: black;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 2.3rem;
+
     }
 }
 
@@ -308,14 +320,73 @@ footer{
                 transition: opacity 0.4s forwards;
             }
         }
-    }
-
-
-
-
-
-
-
-    
+    }   
 }
 
+/*---page-menu---*/
+
+
+.entête{
+    &__image{
+        width: 100%;
+        max-height: 17rem;
+        object-fit: cover;
+    }
+}
+.menu_conteneur{
+    width: 100%;
+    position: relative;
+    top: -3.5rem;
+    background: $font-section;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    margin-bottom: 3rem;
+    padding-top: 0.5rem;
+
+    &__resto{
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        h1{
+            font-size: 1.7rem;
+        }
+        &__coeurvide{
+            font-size: 1.6rem;
+            position: absolute;
+            right: 2rem;
+            z-index: 50;
+            cursor: pointer;
+            &:hover {
+                opacity: 0;
+                transition: opacity 0.3s;
+                transform-origin: bottom;
+            }
+            &:hover + .menu_conteneur__resto__coeurplein {
+                opacity: 1;
+                transition: opacity 0.8s;
+                transform-origin: bottom;
+            }
+            &:active {
+                opacity: 0;
+                transition: opacity 0.3s;
+                transform-origin: bottom;
+            }
+            &:active + .menu_conteneur__resto__coeurplein {
+                opacity: 1;
+                transition: opacity 0.8s;
+                transform-origin: bottom;
+            }
+        }
+
+        &__coeurplein{
+            opacity: 0;
+            font-size: 1.6rem;
+            position: absolute;
+            right: 2rem;
+            background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+            transition: opacity 0.4s forwards;
+        }
+    }
+}
