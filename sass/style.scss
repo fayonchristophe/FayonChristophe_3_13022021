@@ -333,7 +333,7 @@ footer{
         object-fit: cover;
     }
 }
-.menu_conteneur{
+.menu{
     width: 100%;
     position: relative;
     top: -3.5rem;
@@ -361,7 +361,7 @@ footer{
                 transition: opacity 0.3s;
                 transform-origin: bottom;
             }
-            &:hover + .menu_conteneur__resto__coeurplein {
+            &:hover + .menu__resto__coeurplein {
                 opacity: 1;
                 transition: opacity 0.8s;
                 transform-origin: bottom;
@@ -371,7 +371,7 @@ footer{
                 transition: opacity 0.3s;
                 transform-origin: bottom;
             }
-            &:active + .menu_conteneur__resto__coeurplein {
+            &:active + .menu__resto__coeurplein {
                 opacity: 1;
                 transition: opacity 0.8s;
                 transform-origin: bottom;
@@ -390,3 +390,7 @@ footer{
         }
     }
 }
+
+/*---plat---*/
+
+
