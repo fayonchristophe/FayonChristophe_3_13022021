@@ -42,10 +42,20 @@ header .btn_return {
 }
 
 header .retour_index {
+  width: 3.75rem;
+  height: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
   font-size: 1.5rem;
   position: absolute;
-  top: 2.3rem;
 }
 
 /*----------*/
@@ -362,6 +372,7 @@ footer .footer i {
 .restaurants__resto__description__texte p {
   margin-top: 0;
   color: grey;
+  text-overflow: ellipsis;
 }
 
 .restaurants__resto__description__coeurvide {
@@ -445,6 +456,8 @@ footer .footer i {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 1rem;
+  -webkit-transition: all 0.4s forwards;
+  transition: all 0.4s forwards;
 }
 
 .menu__resto h1 {
@@ -500,8 +513,6 @@ footer .footer i {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: opacity 0.4s forwards;
-  transition: opacity 0.4s forwards;
 }
 
 /*---plat---*/
@@ -518,6 +529,7 @@ footer .footer i {
 }
 
 .menu__conteneur__plat__titre {
+  margin-top: 2rem;
   margin-left: 0.3rem;
   margin-bottom: 0;
 }
@@ -525,7 +537,7 @@ footer .footer i {
 .menu__conteneur__plat__underline {
   width: 12%;
   margin-left: 0.5rem;
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
   border-top: 3px solid #99E2D0;
 }
 
@@ -533,7 +545,7 @@ footer .footer i {
   height: 4rem;
   background-color: #fff;
   border-radius: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   padding-left: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,14 +553,31 @@ footer .footer i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  -webkit-animation: slide-in 0.8s;
+          animation: slide-in 0.8s;
 }
 
-.menu__conteneur__plat__carte h3 {
+.menu__conteneur__plat__carte__description {
+  max-width: 75%;
+}
+
+.menu__conteneur__plat__carte__description h4 {
   margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.menu__conteneur__plat__carte p {
+.menu__conteneur__plat__carte__description p {
+  font-size: 0.85rem;
   margin-top: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu__conteneur__plat__carte__prix {
@@ -567,8 +596,8 @@ footer .footer i {
           justify-content: center;
   position: absolute;
   right: 0;
-  -webkit-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .menu__conteneur__plat__carte__selection {
@@ -576,7 +605,7 @@ footer .footer i {
   height: 4rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background: #38c4a1;
+  background: #71d7be;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,9 +617,8 @@ footer .footer i {
           justify-content: center;
   position: absolute;
   right: -3.5rem;
-  -webkit-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
-  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .menu__conteneur__plat__carte__selection i {
@@ -598,15 +626,259 @@ footer .footer i {
 }
 
 .menu__conteneur__plat__carte:hover .menu__conteneur__plat__carte__prix {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   right: 3.5rem;
 }
 
 .menu__conteneur__plat__carte:hover .menu__conteneur__plat__carte__selection {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   right: 0;
-  opacity: 1;
+}
+
+.menu__conteneur__plat__carte:hover .menu__conteneur__plat__carte__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__conteneur__plat__carte1 {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  -webkit-animation: slide-in 1.2s;
+          animation: slide-in 1.2s;
+}
+
+.menu__conteneur__plat__carte1__description {
+  max-width: 75%;
+}
+
+.menu__conteneur__plat__carte1__description h4 {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte1__description p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte1__prix {
+  width: 3.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte1__selection {
+  width: 3.5rem;
+  height: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #71d7be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte1__selection i {
+  color: #fff;
+}
+
+.menu__conteneur__plat__carte1:hover .menu__conteneur__plat__carte1__prix {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 3.5rem;
+}
+
+.menu__conteneur__plat__carte1:hover .menu__conteneur__plat__carte1__selection {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+}
+
+.menu__conteneur__plat__carte1:hover .menu__conteneur__plat__carte1__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__conteneur__plat__carte2 {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  -webkit-animation: slide-in 1.6s;
+          animation: slide-in 1.6s;
+}
+
+.menu__conteneur__plat__carte2__description {
+  max-width: 75%;
+}
+
+.menu__conteneur__plat__carte2__description h4 {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte2__description p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte2__prix {
+  width: 3.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte2__selection {
+  width: 3.5rem;
+  height: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #71d7be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte2__selection i {
+  color: #fff;
+}
+
+.menu__conteneur__plat__carte2:hover .menu__conteneur__plat__carte2__prix {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 3.5rem;
+}
+
+.menu__conteneur__plat__carte2:hover .menu__conteneur__plat__carte2__selection {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+}
+
+.menu__conteneur__plat__carte2:hover .menu__conteneur__plat__carte2__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

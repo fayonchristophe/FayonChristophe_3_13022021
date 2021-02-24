@@ -12,3 +12,58 @@
 @mixin b-shadow {
     box-shadow: 2px 4px 10px $gris-sombre;
 }
+@mixin carte-menu{
+    height: 4rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin-top: 0.8rem;
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    &__description{
+        max-width: 75%;
+        h4{
+            margin-bottom: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        p{
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &__prix{
+        width: 3.5rem;
+        height: 4rem;
+        padding-right: 0.5rem;
+        padding-bottom: 1rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        transition: all 0.4s ease-in-out;
+    }
+    &__selection{
+        width: 3.5rem;
+        height: 4rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        background: darken($tertiary-color, 10);
+        @include flex-mid;
+        position: absolute;
+        right: -3.5rem;
+        transition: all 0.4s ease-in-out;
+        i{
+            color:#fff
+        }
+    }
+}

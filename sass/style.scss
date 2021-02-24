@@ -32,13 +32,15 @@ header {
     .btn_return{
         width: 100%;
         height: 100%;
+        
     }
     .retour_index{
+        width: 3.75rem;
+        height: 3.75rem;
+        @include flex-mid;
         color: black;
         font-size: 1.5rem;
         position: absolute;
-        top: 2.3rem;
-
     }
 }
 
@@ -277,6 +279,7 @@ footer{
                 p {
                     margin-top: 0;
                     color: grey;
+                    text-overflow: ellipsis;
                 }
             }&__coeurvide{
                 font-size: 1.55rem;
@@ -342,11 +345,13 @@ footer{
     border-top-right-radius: 2.5rem;
     margin-bottom: 3rem;
     padding-top: 0.5rem;
+    
 
     &__resto{
         display: flex;
         align-items: center;
         margin-left: 1rem;
+        transition: all 0.4s forwards;
         h1{
             margin-left: 0.5rem;
             font-size: 1.7rem;
@@ -387,7 +392,8 @@ footer{
             background: -webkit-gradient(linear, left top, left bottom, from($primary-color), to($secondary-color));
 	        -webkit-background-clip: text;
 	        -webkit-text-fill-color: transparent;
-            transition: opacity 0.4s forwards;
+            
+           
         }
     }
 }
@@ -403,66 +409,82 @@ footer{
         margin: auto;
         position: relative;
         &__titre{
+            margin-top: 2rem;
             margin-left: 0.3rem;
             margin-bottom: 0;
         }
         &__underline{
             width: 12%;
             margin-left: 0.5rem;
-            margin-top: 0.3rem;
+            margin-top: 0.2rem;
             border-top: 3px solid $tertiary-color;
         }
         &__carte{
-            height: 4rem;
-            background-color: #fff;
-            border-radius: 1rem;
-            margin-top: 1rem;
-            padding-left: 0.5rem;
-            display: flex;
-            align-items: center;
-            h3{
-                margin-bottom: 0;
-            }
-            p{
-                margin-top: 0.3rem;
-            }
-            &__prix{
-                width: 3.5rem;
-                height: 4rem;
-                padding-right: 0.5rem;
-                padding-bottom: 1rem;
-                display: flex;
-                align-items: flex-end;
-                justify-content: center;
-                position: absolute;
-                right: 0;
-                transition: 0.8s ease-in-out;
-            }
-            &__selection{
-                width: 3.5rem;
-                height: 4rem;
-                border-top-right-radius: 1rem;
-                border-bottom-right-radius: 1rem;
-                background: darken($tertiary-color, 25);
-                @include flex-mid;
-                position: absolute;
-                right: -3.5rem;
-                transition: 0.8s ease-in-out;
-                opacity: 0;
-                i{
-                    color:#fff
-                }
-            }
+            @include carte-menu
+
+            animation: slide-in 0.8s ;
+
             &:hover .menu__conteneur__plat__carte__prix{
-                transition: 0.8s;
+                transition: 0.4s;
                 right: 3.5rem;                   
             }
             &:hover .menu__conteneur__plat__carte__selection{
-               transition: 0.8s;
-               right: 0;
-               opacity: 1;
-                  
+                transition: 0.4s;
+                right: 0;
+            }
+            &:hover .menu__conteneur__plat__carte__selection i{
+                transform: rotate(360deg);
+                transition-delay: 1s;
+                transition: 0.5s;
             }
         }
+        &__carte1{
+            @include carte-menu
+
+            animation: slide-in 1.2s;
+
+            &:hover .menu__conteneur__plat__carte1__prix{
+                transition: 0.4s;
+                right: 3.5rem;                   
+            }
+            &:hover .menu__conteneur__plat__carte1__selection{
+                transition: 0.4s;
+                right: 0;
+            }
+            &:hover .menu__conteneur__plat__carte1__selection i{
+                transform: rotate(360deg);
+                transition-delay: 1s;
+                transition: 0.5s;
+            }
+        }
+        &__carte2{
+            @include carte-menu
+
+            animation: slide-in 1.6s;
+
+            &:hover .menu__conteneur__plat__carte2__prix{
+                transition: 0.4s;
+                right: 3.5rem;                   
+            }
+            &:hover .menu__conteneur__plat__carte2__selection{
+                transition: 0.4s;
+                right: 0;
+            }
+            &:hover .menu__conteneur__plat__carte2__selection i{
+                transform: rotate(360deg);
+                transition-delay: 1s;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+@keyframes slide-in{
+    from{
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
