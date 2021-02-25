@@ -22,10 +22,10 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    text-overflow: ellipsis;
     cursor: pointer;
     &__description{
         max-width: 75%;
+        animation: widthtextout 1s;
         h4{
             margin-bottom: 0;
             white-space: nowrap;
@@ -35,9 +35,9 @@
         p{
             font-size: 0.85rem;
             margin-top: 0.3rem;
-            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
     &__prix{
@@ -51,6 +51,8 @@
         position: absolute;
         right: 0;
         transition: all 0.4s ease-in-out;
+        font-weight: bold;
+        font-size: 0.85rem;
     }
     &__selection{
         width: 3.5rem;
@@ -64,6 +66,28 @@
         transition: all 0.4s ease-in-out;
         i{
             color:#fff
+            
         }
     }
+}
+@mixin btn{
+    line-height:3rem;
+            border: none;
+            border-radius: 3rem;
+            text-align:center;
+            vertical-align:middle;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: white;
+            background-image: linear-gradient(160deg, $secondary-color, $primary-color);
+            @include b-shadow;
+            &:hover{
+                background-image: linear-gradient(160deg, darken($secondary-color, 10), darken($primary-color, 10));
+                box-shadow: 3px 4px 12px grey;
+            }
+            &:active{
+                background-image: linear-gradient(160deg, darken($secondary-color, 10), darken($primary-color, 10));
+                box-shadow: 3px 4px 12px grey;
+            }
 }

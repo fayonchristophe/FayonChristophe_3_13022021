@@ -54,7 +54,7 @@ header .retour_index {
       -ms-flex-pack: center;
           justify-content: center;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: absolute;
 }
 
@@ -430,6 +430,12 @@ footer .footer i {
 }
 
 /*---page-menu---*/
+main {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
 .entête__image {
   width: 100%;
   max-height: 17rem;
@@ -444,7 +450,6 @@ footer .footer i {
   background: #f6f6f6;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
-  margin-bottom: 3rem;
   padding-top: 0.5rem;
 }
 
@@ -515,6 +520,48 @@ footer .footer i {
   -webkit-text-fill-color: transparent;
 }
 
+.menu__bouton {
+  width: 100%;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__bouton__btn {
+  width: 10rem;
+  line-height: 3rem;
+  border: none;
+  border-radius: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(160deg, #FF79DA, #9356DC);
+  -webkit-box-shadow: 2px 4px 10px #d3d3d3;
+          box-shadow: 2px 4px 10px #d3d3d3;
+}
+
+.menu__bouton__btn:hover {
+  background-image: linear-gradient(160deg, #ff46cc, #782cd3);
+  -webkit-box-shadow: 3px 4px 12px grey;
+          box-shadow: 3px 4px 12px grey;
+}
+
+.menu__bouton__btn:active {
+  background-image: linear-gradient(160deg, #ff46cc, #782cd3);
+  -webkit-box-shadow: 3px 4px 12px grey;
+          box-shadow: 3px 4px 12px grey;
+}
+
 /*---plat---*/
 .menu__conteneur {
   width: 100%;
@@ -555,7 +602,6 @@ footer .footer i {
           align-items: center;
   position: relative;
   overflow: hidden;
-  text-overflow: ellipsis;
   cursor: pointer;
   -webkit-animation: slide-in 0.8s;
           animation: slide-in 0.8s;
@@ -563,6 +609,8 @@ footer .footer i {
 
 .menu__conteneur__plat__carte__description {
   max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
 }
 
 .menu__conteneur__plat__carte__description h4 {
@@ -575,9 +623,9 @@ footer .footer i {
 .menu__conteneur__plat__carte__description p {
   font-size: 0.85rem;
   margin-top: 0.3rem;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu__conteneur__plat__carte__prix {
@@ -598,6 +646,8 @@ footer .footer i {
   right: 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
 }
 
 .menu__conteneur__plat__carte__selection {
@@ -623,6 +673,11 @@ footer .footer i {
 
 .menu__conteneur__plat__carte__selection i {
   color: #fff;
+}
+
+.menu__conteneur__plat__carte:hover .menu__conteneur__plat__carte__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
 }
 
 .menu__conteneur__plat__carte:hover .menu__conteneur__plat__carte__prix {
@@ -660,14 +715,15 @@ footer .footer i {
           align-items: center;
   position: relative;
   overflow: hidden;
-  text-overflow: ellipsis;
   cursor: pointer;
-  -webkit-animation: slide-in 1.2s;
-          animation: slide-in 1.2s;
+  -webkit-animation: slide-in 0.8s 0.15s;
+          animation: slide-in 0.8s 0.15s;
 }
 
 .menu__conteneur__plat__carte1__description {
   max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
 }
 
 .menu__conteneur__plat__carte1__description h4 {
@@ -680,9 +736,9 @@ footer .footer i {
 .menu__conteneur__plat__carte1__description p {
   font-size: 0.85rem;
   margin-top: 0.3rem;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu__conteneur__plat__carte1__prix {
@@ -703,6 +759,8 @@ footer .footer i {
   right: 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
 }
 
 .menu__conteneur__plat__carte1__selection {
@@ -728,6 +786,11 @@ footer .footer i {
 
 .menu__conteneur__plat__carte1__selection i {
   color: #fff;
+}
+
+.menu__conteneur__plat__carte1:hover .menu__conteneur__plat__carte1__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
 }
 
 .menu__conteneur__plat__carte1:hover .menu__conteneur__plat__carte1__prix {
@@ -765,14 +828,15 @@ footer .footer i {
           align-items: center;
   position: relative;
   overflow: hidden;
-  text-overflow: ellipsis;
   cursor: pointer;
-  -webkit-animation: slide-in 1.6s;
-          animation: slide-in 1.6s;
+  -webkit-animation: slide-in 0.8s 0.3s;
+          animation: slide-in 0.8s 0.3s;
 }
 
 .menu__conteneur__plat__carte2__description {
   max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
 }
 
 .menu__conteneur__plat__carte2__description h4 {
@@ -785,9 +849,9 @@ footer .footer i {
 .menu__conteneur__plat__carte2__description p {
   font-size: 0.85rem;
   margin-top: 0.3rem;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu__conteneur__plat__carte2__prix {
@@ -808,6 +872,8 @@ footer .footer i {
   right: 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
 }
 
 .menu__conteneur__plat__carte2__selection {
@@ -835,6 +901,11 @@ footer .footer i {
   color: #fff;
 }
 
+.menu__conteneur__plat__carte2:hover .menu__conteneur__plat__carte2__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
+}
+
 .menu__conteneur__plat__carte2:hover .menu__conteneur__plat__carte2__prix {
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -856,10 +927,724 @@ footer .footer i {
   transition: 0.5s;
 }
 
+.menu__conteneur__plat__carte3 {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: slide-in 0.8s 0.45s;
+          animation: slide-in 0.8s 0.45s;
+}
+
+.menu__conteneur__plat__carte3__description {
+  max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
+}
+
+.menu__conteneur__plat__carte3__description h4 {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte3__description p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__conteneur__plat__carte3__prix {
+  width: 3.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.menu__conteneur__plat__carte3__selection {
+  width: 3.5rem;
+  height: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #71d7be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte3__selection i {
+  color: #fff;
+}
+
+.menu__conteneur__plat__carte3:hover .menu__conteneur__plat__carte3__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
+}
+
+.menu__conteneur__plat__carte3:hover .menu__conteneur__plat__carte3__prix {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 3.5rem;
+}
+
+.menu__conteneur__plat__carte3:hover .menu__conteneur__plat__carte3__selection {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+}
+
+.menu__conteneur__plat__carte3:hover .menu__conteneur__plat__carte3__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__conteneur__plat__carte4 {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: slide-in 0.8s 0.6s;
+          animation: slide-in 0.8s 0.6s;
+}
+
+.menu__conteneur__plat__carte4__description {
+  max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
+}
+
+.menu__conteneur__plat__carte4__description h4 {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte4__description p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__conteneur__plat__carte4__prix {
+  width: 3.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.menu__conteneur__plat__carte4__selection {
+  width: 3.5rem;
+  height: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #71d7be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte4__selection i {
+  color: #fff;
+}
+
+.menu__conteneur__plat__carte4:hover .menu__conteneur__plat__carte4__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
+}
+
+.menu__conteneur__plat__carte4:hover .menu__conteneur__plat__carte4__prix {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 3.5rem;
+}
+
+.menu__conteneur__plat__carte4:hover .menu__conteneur__plat__carte4__selection {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+}
+
+.menu__conteneur__plat__carte4:hover .menu__conteneur__plat__carte4__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__conteneur__plat__carte5 {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: slide-in 0.8s 0.75s;
+          animation: slide-in 0.8s 0.75s;
+}
+
+.menu__conteneur__plat__carte5__description {
+  max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
+}
+
+.menu__conteneur__plat__carte5__description h4 {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte5__description p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__conteneur__plat__carte5__prix {
+  width: 3.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.menu__conteneur__plat__carte5__selection {
+  width: 3.5rem;
+  height: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #71d7be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte5__selection i {
+  color: #fff;
+}
+
+.menu__conteneur__plat__carte5:hover .menu__conteneur__plat__carte5__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
+}
+
+.menu__conteneur__plat__carte5:hover .menu__conteneur__plat__carte5__prix {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 3.5rem;
+}
+
+.menu__conteneur__plat__carte5:hover .menu__conteneur__plat__carte5__selection {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+}
+
+.menu__conteneur__plat__carte5:hover .menu__conteneur__plat__carte5__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__conteneur__plat__carte6 {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: slide-in 0.8s 0.9s;
+          animation: slide-in 0.8s 0.9s;
+}
+
+.menu__conteneur__plat__carte6__description {
+  max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
+}
+
+.menu__conteneur__plat__carte6__description h4 {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte6__description p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__conteneur__plat__carte6__prix {
+  width: 3.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.menu__conteneur__plat__carte6__selection {
+  width: 3.5rem;
+  height: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #71d7be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte6__selection i {
+  color: #fff;
+}
+
+.menu__conteneur__plat__carte6:hover .menu__conteneur__plat__carte6__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
+}
+
+.menu__conteneur__plat__carte6:hover .menu__conteneur__plat__carte6__prix {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 3.5rem;
+}
+
+.menu__conteneur__plat__carte6:hover .menu__conteneur__plat__carte6__selection {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+}
+
+.menu__conteneur__plat__carte6:hover .menu__conteneur__plat__carte6__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__conteneur__plat__carte7 {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: slide-in 0.8s 1.05s;
+          animation: slide-in 0.8s 1.05s;
+}
+
+.menu__conteneur__plat__carte7__description {
+  max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
+}
+
+.menu__conteneur__plat__carte7__description h4 {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte7__description p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__conteneur__plat__carte7__prix {
+  width: 3.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.menu__conteneur__plat__carte7__selection {
+  width: 3.5rem;
+  height: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #71d7be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte7__selection i {
+  color: #fff;
+}
+
+.menu__conteneur__plat__carte7:hover .menu__conteneur__plat__carte7__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
+}
+
+.menu__conteneur__plat__carte7:hover .menu__conteneur__plat__carte7__prix {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 3.5rem;
+}
+
+.menu__conteneur__plat__carte7:hover .menu__conteneur__plat__carte7__selection {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+}
+
+.menu__conteneur__plat__carte7:hover .menu__conteneur__plat__carte7__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__conteneur__plat__carte8 {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: slide-in 0.8s 1.2s;
+          animation: slide-in 0.8s 1.2s;
+}
+
+.menu__conteneur__plat__carte8__description {
+  max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
+}
+
+.menu__conteneur__plat__carte8__description h4 {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte8__description p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__conteneur__plat__carte8__prix {
+  width: 3.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.menu__conteneur__plat__carte8__selection {
+  width: 3.5rem;
+  height: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #71d7be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte8__selection i {
+  color: #fff;
+}
+
+.menu__conteneur__plat__carte8:hover .menu__conteneur__plat__carte8__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
+}
+
+.menu__conteneur__plat__carte8:hover .menu__conteneur__plat__carte8__prix {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 3.5rem;
+}
+
+.menu__conteneur__plat__carte8:hover .menu__conteneur__plat__carte8__selection {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+}
+
+.menu__conteneur__plat__carte8:hover .menu__conteneur__plat__carte8__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes widthtextout {
+  0% {
+    width: 60%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes widthtextout {
+  0% {
+    width: 60%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes widthtext {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes widthtext {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
 @-webkit-keyframes slide-in {
   from {
-    -webkit-transform: translateY(5rem);
-            transform: translateY(5rem);
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
     opacity: 0;
   }
   to {
@@ -871,8 +1656,8 @@ footer .footer i {
 
 @keyframes slide-in {
   from {
-    -webkit-transform: translateY(5rem);
-            transform: translateY(5rem);
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
     opacity: 0;
   }
   to {
