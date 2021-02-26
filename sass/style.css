@@ -433,7 +433,6 @@ footer .footer i {
 main {
   width: 100%;
   height: auto;
-  margin: 0;
 }
 
 .entête__image {
@@ -445,12 +444,14 @@ main {
 
 .menu {
   width: 100%;
+  height: auto;
   position: relative;
   top: -3.5rem;
   background: #f6f6f6;
   border-top-left-radius: 2.5rem;
   border-top-right-radius: 2.5rem;
   padding-top: 0.5rem;
+  padding-bottom: 2rem;
 }
 
 .menu__resto {
@@ -465,9 +466,10 @@ main {
   transition: all 0.4s forwards;
 }
 
-.menu__resto h1 {
+.menu__resto h2 {
   margin-left: 0.5rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  font-family: "Shrikhand", cursive;
 }
 
 .menu__resto__coeurvide {
@@ -522,7 +524,7 @@ main {
 
 .menu__bouton {
   width: 100%;
-  height: 10rem;
+  height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,7 +537,7 @@ main {
 }
 
 .menu__bouton__btn {
-  width: 10rem;
+  width: 12rem;
   line-height: 3rem;
   border: none;
   border-radius: 3rem;
@@ -573,10 +575,11 @@ main {
   height: auto;
   margin: auto;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .menu__conteneur__plat__titre {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   margin-left: 0.3rem;
   margin-bottom: 0;
 }
@@ -1597,6 +1600,119 @@ main {
 }
 
 .menu__conteneur__plat__carte8:hover .menu__conteneur__plat__carte8__selection i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__conteneur__plat__carte9 {
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: slide-in 0.8s 1.35s;
+          animation: slide-in 0.8s 1.35s;
+}
+
+.menu__conteneur__plat__carte9__description {
+  max-width: 75%;
+  -webkit-animation: widthtextout 1s;
+          animation: widthtextout 1s;
+}
+
+.menu__conteneur__plat__carte9__description h4 {
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu__conteneur__plat__carte9__description p {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__conteneur__plat__carte9__prix {
+  width: 3.5rem;
+  height: 4rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.menu__conteneur__plat__carte9__selection {
+  width: 3.5rem;
+  height: 4rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #71d7be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -3.5rem;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu__conteneur__plat__carte9__selection i {
+  color: #fff;
+}
+
+.menu__conteneur__plat__carte9:hover .menu__conteneur__plat__carte9__description {
+  -webkit-animation: widthtext 0.4s forwards;
+          animation: widthtext 0.4s forwards;
+}
+
+.menu__conteneur__plat__carte9:hover .menu__conteneur__plat__carte9__prix {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 3.5rem;
+}
+
+.menu__conteneur__plat__carte9:hover .menu__conteneur__plat__carte9__selection {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  right: 0;
+}
+
+.menu__conteneur__plat__carte9:hover .menu__conteneur__plat__carte9__selection i {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition-delay: 1s;

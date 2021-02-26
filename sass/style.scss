@@ -218,6 +218,7 @@ footer{
         margin-left: auto;
         margin-right: auto;
         position: relative;
+
         &__nouveau{
             @include flex-mid;
             width: 5rem;
@@ -312,9 +313,7 @@ footer{
 main{
     width: 100%;
     height: auto;
-    margin: 0;
 }
-
 .entête{
     &__image{
         width: 100%;
@@ -324,22 +323,23 @@ main{
 }
 .menu{
     width: 100%;
+    height: auto;
     position: relative;
     top: -3.5rem;
     background: $font-section;
     border-top-left-radius: 2.5rem;
     border-top-right-radius: 2.5rem;
     padding-top: 0.5rem;
-    
-
+    padding-bottom: 2rem;
     &__resto{
         display: flex;
         align-items: center;
         margin-left: 1rem;
         transition: all 0.4s forwards;
-        h1{
+        h2{
             margin-left: 0.5rem;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
+            font-family: $font-secondary;
         }
         &__coeurvide{
             font-size: 1.6rem;
@@ -381,10 +381,10 @@ main{
     }
     &__bouton{
         width: 100%;
-        height: 10rem;
+        height: 5rem;
         @include flex-mid;
         &__btn{
-            width: 10rem;
+            width: 12rem;
             @include btn;
         }
     }
@@ -400,8 +400,9 @@ main{
         height: auto;
         margin: auto;
         position: relative;
+        margin-bottom: 2rem;
         &__titre{
-            margin-top: 2rem;
+            margin-top: 0.5rem;
             margin-left: 0.3rem;
             margin-bottom: 0;
         }
@@ -604,6 +605,28 @@ main{
                 right: 0;
             }
             &:hover .menu__conteneur__plat__carte8__selection i{
+                transform: rotate(360deg);
+                transition-delay: 1s;
+                transition: 0.5s;
+            }
+        }
+        &__carte9{
+            @include carte-menu;
+
+            animation: slide-in 0.8s 1.35s;
+
+            &:hover .menu__conteneur__plat__carte9__description{
+                animation: widthtext 0.4s forwards;
+            }
+            &:hover .menu__conteneur__plat__carte9__prix{
+                transition: 0.4s;
+                right: 3.5rem;                   
+            }
+            &:hover .menu__conteneur__plat__carte9__selection{
+                transition: 0.4s;
+                right: 0;
+            }
+            &:hover .menu__conteneur__plat__carte9__selection i{
                 transform: rotate(360deg);
                 transition-delay: 1s;
                 transition: 0.5s;
