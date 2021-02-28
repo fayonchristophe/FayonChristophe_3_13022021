@@ -15,7 +15,7 @@ h1 {
 /*--------------*/
 
 #preloader {
-    z-index: 40;
+    z-index: 9999;
     position: fixed;
     top: 0;
     left: 0;
@@ -379,7 +379,7 @@ footer{
                         transition: opacity 0.3s;
                         transform-origin: bottom;
                     }
-                    &:hover + .restaurants__resto__description__coeurplein {
+                    &:hover + .restaurants__conteneur__resto__description__coeurplein {
                         opacity: 1;
                         transition: opacity 0.8s;
                         transform-origin: bottom;
@@ -389,7 +389,7 @@ footer{
                         transition: opacity 0.3s;
                         transform-origin: bottom;
                     }
-                    &:active + .restaurants__resto__description__coeurplein {
+                    &:active + .restaurants__conteneur__resto__description__coeurplein {
                         opacity: 1;
                         transition: opacity 0.8s;
                         transform-origin: bottom;

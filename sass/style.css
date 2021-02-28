@@ -14,7 +14,7 @@ h1 {
 /*---Preloader--*/
 /*--------------*/
 #preloader {
-  z-index: 40;
+  z-index: 9999;
   position: fixed;
   top: 0;
   left: 0;
@@ -583,7 +583,7 @@ footer .footer i {
           transform-origin: bottom;
 }
 
-.restaurants__conteneur__resto__description__coeurvide:hover + .restaurants__resto__description__coeurplein {
+.restaurants__conteneur__resto__description__coeurvide:hover + .restaurants__conteneur__resto__description__coeurplein {
   opacity: 1;
   -webkit-transition: opacity 0.8s;
   transition: opacity 0.8s;
@@ -599,7 +599,7 @@ footer .footer i {
           transform-origin: bottom;
 }
 
-.restaurants__conteneur__resto__description__coeurvide:active + .restaurants__resto__description__coeurplein {
+.restaurants__conteneur__resto__description__coeurvide:active + .restaurants__conteneur__resto__description__coeurplein {
   opacity: 1;
   -webkit-transition: opacity 0.8s;
   transition: opacity 0.8s;
