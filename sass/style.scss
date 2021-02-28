@@ -173,7 +173,6 @@ footer{
     background: linear-gradient(to bottom,  rgba(169,169,169,1) 0%,rgba(234,234,234,1) 10%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a9a9', endColorstr='#eaeaea',GradientType=0 );
     
-
     &__city{
         @include flex-mid;
         h4{ 
