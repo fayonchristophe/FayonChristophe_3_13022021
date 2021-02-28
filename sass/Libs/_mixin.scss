@@ -24,7 +24,7 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
-
+    opacity: 0;
     &__description{
         max-width: 75%;
         animation: widthtextout 1s;

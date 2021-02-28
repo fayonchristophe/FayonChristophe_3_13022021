@@ -110,12 +110,13 @@ header {
         
     }
     .retour_index{
-        width: 3.75rem;
+        width: 4.75rem;
         height: 3.75rem;
         @include flex-mid;
         color: black;
         font-size: 1.2rem;
         position: absolute;
+        left: 1rem; 
     }
 }
 
@@ -129,10 +130,12 @@ footer{
     width: 100%;
     height: auto;
     background-color: rgb(43, 43, 43);
-    display: flex;
+    @include flex-mid;
+    @media (max-width: 900px){
     align-items: flex-start;
     justify-content: space-between;
     margin-right: 25%;
+    }
      .footer{
         width: auto;
         list-style: none;
@@ -482,242 +485,259 @@ footer{
             transition: opacity 0.3s;  
         }
     }
+    
+
+    /*----------*/
+    /*---plat---*/
+    /*----------*/
+
+    &__conteneur{
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-bottom: 2rem;
+        align-items: center;
+        flex-flow: row wrap;
+        @media (max-width: 900px){
+            flex-direction: column;
+        }
+        &__plat{
+            width: 30%;
+            height: 20rem;
+            margin: auto;
+            @media (max-width: 900px){
+            width: 90%;
+            height: auto;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 2rem;
+            }
+            position: relative;
+            margin-bottom: 2rem;
+            &__titre{
+                margin-top: 0.5rem;
+                margin-left: 0.3rem;
+                margin-bottom: 0;
+            }
+            &__underline{
+                width: 2.5rem;
+                margin-left: 0.3rem;
+                margin-top: 0.2rem;
+                border-top: 3px solid $tertiary-color;
+            }
+            &__carte{
+                @include carte-menu;
+                animation: slide-in 0.8s forwards;
+                &:hover .menu__conteneur__plat__carte__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+            &__carte1{
+                @include carte-menu;
+                animation: slide-in 0.8s 0.15s forwards;
+                &:hover .menu__conteneur__plat__carte1__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte1__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte1__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte1__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+            &__carte2{
+                @include carte-menu;
+                animation: slide-in 0.8s 0.3s forwards;
+                &:hover .menu__conteneur__plat__carte2__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte2__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte2__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte2__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+            &__carte3{
+                @include carte-menu;
+                animation: slide-in 0.8s 0.45s forwards;
+                &:hover .menu__conteneur__plat__carte3__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte3__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte3__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte3__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+            &__carte4{
+                @include carte-menu;
+                animation: slide-in 0.8s 0.6s forwards;
+                &:hover .menu__conteneur__plat__carte4__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte4__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte4__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte4__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+            &__carte5{
+                @include carte-menu;
+                animation: slide-in 0.8s 0.75s forwards;
+                &:hover .menu__conteneur__plat__carte5__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte5__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte5__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte5__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+            &__carte6{
+                @include carte-menu;
+                animation: slide-in 0.8s 0.9s forwards;
+                &:hover .menu__conteneur__plat__carte6__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte6__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte6__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte6__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+            &__carte7{
+                @include carte-menu;
+                animation: slide-in 0.8s 1.05s forwards;
+                &:hover .menu__conteneur__plat__carte7__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte7__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte7__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte7__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+            &__carte8{
+                @include carte-menu;
+                animation: slide-in 0.8s 1.2s forwards;
+                &:hover .menu__conteneur__plat__carte8__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte8__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte8__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte8__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+            &__carte9{
+                @include carte-menu;
+                animation: slide-in 0.8s 1.35s forwards;
+                &:hover .menu__conteneur__plat__carte9__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:hover .menu__conteneur__plat__carte9__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:hover .menu__conteneur__plat__carte9__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:hover .menu__conteneur__plat__carte9__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
     &__bouton{
         width: 100%;
         height: 5rem;
+        margin-bottom: 2rem;
         @include flex-mid;
         &__btn{
             width: 12rem;
             @include btn;
         }
     }
-}
 
-/*----------*/
-/*---plat---*/
-/*----------*/
-
-.menu__conteneur{
-    width: 100%;
-    height: auto;
-    &__plat{
-        width: 90%;
-        height: auto;
-        margin: auto;
-        position: relative;
-        margin-bottom: 2rem;
-        &__titre{
-            margin-top: 0.5rem;
-            margin-left: 0.3rem;
-            margin-bottom: 0;
-        }
-        &__underline{
-            width: 12%;
-            margin-left: 0.5rem;
-            margin-top: 0.2rem;
-            border-top: 3px solid $tertiary-color;
-        }
-        &__carte{
-            @include carte-menu;
-            animation: slide-in 0.8s ;
-            &:hover .menu__conteneur__plat__carte__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-        &__carte1{
-            @include carte-menu;
-            animation: slide-in 0.8s 0.15s;
-            &:hover .menu__conteneur__plat__carte1__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte1__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte1__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte1__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-        &__carte2{
-            @include carte-menu;
-            animation: slide-in 0.8s 0.3s;
-            &:hover .menu__conteneur__plat__carte2__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte2__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte2__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte2__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-        &__carte3{
-            @include carte-menu;
-            animation: slide-in 0.8s 0.45s;
-            &:hover .menu__conteneur__plat__carte3__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte3__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte3__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte3__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-        &__carte4{
-            @include carte-menu;
-            animation: slide-in 0.8s 0.6s;
-            &:hover .menu__conteneur__plat__carte4__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte4__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte4__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte4__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-        &__carte5{
-            @include carte-menu;
-            animation: slide-in 0.8s 0.75s;
-            &:hover .menu__conteneur__plat__carte5__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte5__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte5__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte5__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-        &__carte6{
-            @include carte-menu;
-            animation: slide-in 0.8s 0.9s;
-            &:hover .menu__conteneur__plat__carte6__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte6__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte6__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte6__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-        &__carte7{
-            @include carte-menu;
-            animation: slide-in 0.8s 1.05s;
-            &:hover .menu__conteneur__plat__carte7__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte7__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte7__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte7__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-        &__carte8{
-            @include carte-menu;
-            animation: slide-in 0.8s 1.2s;
-            &:hover .menu__conteneur__plat__carte8__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte8__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte8__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte8__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-        &__carte9{
-            @include carte-menu;
-            animation: slide-in 0.8s 1.35s;
-            &:hover .menu__conteneur__plat__carte9__description{
-                animation: widthtext 0.4s forwards;
-            }
-            &:hover .menu__conteneur__plat__carte9__prix{
-                transition: 0.4s;
-                right: 3.5rem;                   
-            }
-            &:hover .menu__conteneur__plat__carte9__selection{
-                transition: 0.4s;
-                right: 0;
-            }
-            &:hover .menu__conteneur__plat__carte9__selection i{
-                transform: rotate(360deg);
-                transition-delay: 1s;
-                transition: 0.5s;
-            }
-        }
-    }
 }
 
 @keyframes widthtextout {

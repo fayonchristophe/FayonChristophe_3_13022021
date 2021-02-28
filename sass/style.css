@@ -146,7 +146,7 @@ header .btn_return {
 }
 
 header .retour_index {
-  width: 3.75rem;
+  width: 4.75rem;
   height: 3.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,6 +160,7 @@ header .retour_index {
   color: black;
   font-size: 1.2rem;
   position: absolute;
+  left: 1rem;
 }
 
 /*----------*/
@@ -172,13 +173,24 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-right: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 900px) {
+  footer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 25%;
+  }
 }
 
 footer .footer {
@@ -629,6 +641,9 @@ footer .footer i {
   padding-top: 0.5rem;
   padding-bottom: 2rem;
   margin-bottom: -3.5rem;
+  /*----------*/
+  /*---plat---*/
+  /*----------*/
 }
 
 .menu__resto {
@@ -703,62 +718,47 @@ footer .footer i {
   transition: opacity 0.3s;
 }
 
-.menu__bouton {
-  width: 100%;
-  height: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.menu__bouton__btn {
-  width: 12rem;
-  line-height: 3rem;
-  border: none;
-  border-radius: 3rem;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: white;
-  background-image: linear-gradient(160deg, #FF79DA, #9356DC);
-  -webkit-box-shadow: 2px 4px 10px #d3d3d3;
-          box-shadow: 2px 4px 10px #d3d3d3;
-}
-
-.menu__bouton__btn:hover {
-  background-image: linear-gradient(160deg, #fface8, #ae80e5);
-  -webkit-box-shadow: 3px 4px 12px grey;
-          box-shadow: 3px 4px 12px grey;
-}
-
-.menu__bouton__btn:active {
-  background-image: linear-gradient(160deg, #fface8, #ae80e5);
-  -webkit-box-shadow: 3px 4px 12px grey;
-          box-shadow: 3px 4px 12px grey;
-}
-
-/*----------*/
-/*---plat---*/
-/*----------*/
 .menu__conteneur {
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+@media (max-width: 900px) {
+  .menu__conteneur {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .menu__conteneur__plat {
-  width: 90%;
-  height: auto;
+  width: 30%;
+  height: 20rem;
   margin: auto;
   position: relative;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .menu__conteneur__plat {
+    width: 90%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+  }
 }
 
 .menu__conteneur__plat__titre {
@@ -768,8 +768,8 @@ footer .footer i {
 }
 
 .menu__conteneur__plat__underline {
-  width: 12%;
-  margin-left: 0.5rem;
+  width: 2.5rem;
+  margin-left: 0.3rem;
   margin-top: 0.2rem;
   border-top: 3px solid #99E2D0;
 }
@@ -789,8 +789,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s;
-          animation: slide-in 0.8s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s forwards;
+          animation: slide-in 0.8s forwards;
 }
 
 .menu__conteneur__plat__carte__description {
@@ -904,8 +905,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s 0.15s;
-          animation: slide-in 0.8s 0.15s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s 0.15s forwards;
+          animation: slide-in 0.8s 0.15s forwards;
 }
 
 .menu__conteneur__plat__carte1__description {
@@ -1019,8 +1021,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s 0.3s;
-          animation: slide-in 0.8s 0.3s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s 0.3s forwards;
+          animation: slide-in 0.8s 0.3s forwards;
 }
 
 .menu__conteneur__plat__carte2__description {
@@ -1134,8 +1137,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s 0.45s;
-          animation: slide-in 0.8s 0.45s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s 0.45s forwards;
+          animation: slide-in 0.8s 0.45s forwards;
 }
 
 .menu__conteneur__plat__carte3__description {
@@ -1249,8 +1253,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s 0.6s;
-          animation: slide-in 0.8s 0.6s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s 0.6s forwards;
+          animation: slide-in 0.8s 0.6s forwards;
 }
 
 .menu__conteneur__plat__carte4__description {
@@ -1364,8 +1369,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s 0.75s;
-          animation: slide-in 0.8s 0.75s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s 0.75s forwards;
+          animation: slide-in 0.8s 0.75s forwards;
 }
 
 .menu__conteneur__plat__carte5__description {
@@ -1479,8 +1485,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s 0.9s;
-          animation: slide-in 0.8s 0.9s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s 0.9s forwards;
+          animation: slide-in 0.8s 0.9s forwards;
 }
 
 .menu__conteneur__plat__carte6__description {
@@ -1594,8 +1601,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s 1.05s;
-          animation: slide-in 0.8s 1.05s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s 1.05s forwards;
+          animation: slide-in 0.8s 1.05s forwards;
 }
 
 .menu__conteneur__plat__carte7__description {
@@ -1709,8 +1717,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s 1.2s;
-          animation: slide-in 0.8s 1.2s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s 1.2s forwards;
+          animation: slide-in 0.8s 1.2s forwards;
 }
 
 .menu__conteneur__plat__carte8__description {
@@ -1824,8 +1833,9 @@ footer .footer i {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: slide-in 0.8s 1.35s;
-          animation: slide-in 0.8s 1.35s;
+  opacity: 0;
+  -webkit-animation: slide-in 0.8s 1.35s forwards;
+          animation: slide-in 0.8s 1.35s forwards;
 }
 
 .menu__conteneur__plat__carte9__description {
@@ -1922,6 +1932,49 @@ footer .footer i {
           transition-delay: 1s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.menu__bouton {
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__bouton__btn {
+  width: 12rem;
+  line-height: 3rem;
+  border: none;
+  border-radius: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(160deg, #FF79DA, #9356DC);
+  -webkit-box-shadow: 2px 4px 10px #d3d3d3;
+          box-shadow: 2px 4px 10px #d3d3d3;
+}
+
+.menu__bouton__btn:hover {
+  background-image: linear-gradient(160deg, #fface8, #ae80e5);
+  -webkit-box-shadow: 3px 4px 12px grey;
+          box-shadow: 3px 4px 12px grey;
+}
+
+.menu__bouton__btn:active {
+  background-image: linear-gradient(160deg, #fface8, #ae80e5);
+  -webkit-box-shadow: 3px 4px 12px grey;
+          box-shadow: 3px 4px 12px grey;
 }
 
 @-webkit-keyframes widthtextout {
