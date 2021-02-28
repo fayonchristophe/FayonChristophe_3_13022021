@@ -23,6 +23,7 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+
     &__description{
         max-width: 75%;
         animation: widthtextout 1s;
@@ -64,8 +65,9 @@
         position: absolute;
         right: -3.5rem;
         transition: all 0.4s ease-in-out;
+        transition: rotate(0) 0.5s;
         i{
-            color:#fff
+            color:#fff;
             
         }
     }
@@ -83,11 +85,11 @@
             background-image: linear-gradient(160deg, $secondary-color, $primary-color);
             @include b-shadow;
             &:hover{
-                background-image: linear-gradient(160deg, darken($secondary-color, 10), darken($primary-color, 10));
+                background-image: linear-gradient(160deg, lighten($secondary-color, 10), lighten($primary-color, 10));
                 box-shadow: 3px 4px 12px grey;
             }
             &:active{
-                background-image: linear-gradient(160deg, darken($secondary-color, 10), darken($primary-color, 10));
+                background-image: linear-gradient(160deg, lighten($secondary-color, 10), lighten($primary-color, 10));
                 box-shadow: 3px 4px 12px grey;
             }
 }
