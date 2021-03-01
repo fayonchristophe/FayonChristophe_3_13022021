@@ -4,6 +4,7 @@
 body{
     font-family: $font-primary;
     margin: auto;
+    max-width: 1280px;
     min-width: 376px;
     width: 100%;
 }
@@ -110,13 +111,12 @@ header {
         
     }
     .retour_index{
-        width: 4.75rem;
+        width: 6rem;
         height: 3.75rem;
         @include flex-mid;
         color: black;
         font-size: 1.2rem;
-        position: absolute;
-        left: 1rem; 
+        position: absolute; 
     }
 }
 
