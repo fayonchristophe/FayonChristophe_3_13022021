@@ -22,8 +22,8 @@ h1 {
   width: 100%;
   height: 100%;
   background-color: #f6f6f6;
-  -webkit-animation: chargement 0s 2s forwards;
-          animation: chargement 0s 2s forwards;
+  -webkit-animation: chargement 0.2s 2s forwards;
+          animation: chargement 0.2s 2s forwards;
 }
 
 /*--------------*/
@@ -326,7 +326,6 @@ footer .footer i {
 /*--fonctionnement--*/
 /*------------------*/
 .operation {
-  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
