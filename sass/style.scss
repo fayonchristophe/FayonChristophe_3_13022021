@@ -539,6 +539,22 @@ footer{
                     transition-delay: 1s;
                     transition: 0.5s;
                 }
+                &:active .menu__conteneur__plat__carte__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
             }
             &__carte1{
                 @include carte-menu;
@@ -555,6 +571,22 @@ footer{
                     right: 0;
                 }
                 &:hover .menu__conteneur__plat__carte1__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+                &:active .menu__conteneur__plat__carte1__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte1__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte1__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte1__selection i{
                     transform: rotate(360deg);
                     transition-delay: 1s;
                     transition: 0.5s;
@@ -579,6 +611,22 @@ footer{
                     transition-delay: 1s;
                     transition: 0.5s;
                 }
+                &:active .menu__conteneur__plat__carte2__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte2__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte2__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte2__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
             }
             &__carte3{
                 @include carte-menu;
@@ -595,6 +643,22 @@ footer{
                     right: 0;
                 }
                 &:hover .menu__conteneur__plat__carte3__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+                &:active .menu__conteneur__plat__carte3__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte3__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte3__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte3__selection i{
                     transform: rotate(360deg);
                     transition-delay: 1s;
                     transition: 0.5s;
@@ -619,6 +683,22 @@ footer{
                     transition-delay: 1s;
                     transition: 0.5s;
                 }
+                &:active .menu__conteneur__plat__carte4__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte4__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte4__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte4__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
             }
             &__carte5{
                 @include carte-menu;
@@ -635,6 +715,22 @@ footer{
                     right: 0;
                 }
                 &:hover .menu__conteneur__plat__carte5__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+                &:active .menu__conteneur__plat__carte5__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte5__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte5__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte5__selection i{
                     transform: rotate(360deg);
                     transition-delay: 1s;
                     transition: 0.5s;
@@ -659,6 +755,22 @@ footer{
                     transition-delay: 1s;
                     transition: 0.5s;
                 }
+                &:active .menu__conteneur__plat__carte6__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte6__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte6__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte6__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
             }
             &__carte7{
                 @include carte-menu;
@@ -675,6 +787,22 @@ footer{
                     right: 0;
                 }
                 &:hover .menu__conteneur__plat__carte7__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+                &:active .menu__conteneur__plat__carte7__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte7__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte7__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte7__selection i{
                     transform: rotate(360deg);
                     transition-delay: 1s;
                     transition: 0.5s;
@@ -699,6 +827,22 @@ footer{
                     transition-delay: 1s;
                     transition: 0.5s;
                 }
+                &:active .menu__conteneur__plat__carte8__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte8__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte8__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte8__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
             }
             &__carte9{
                 @include carte-menu;
@@ -715,6 +859,22 @@ footer{
                     right: 0;
                 }
                 &:hover .menu__conteneur__plat__carte9__selection i{
+                    transform: rotate(360deg);
+                    transition-delay: 1s;
+                    transition: 0.5s;
+                }
+                &:active .menu__conteneur__plat__carte9__description{
+                    animation: widthtext 0.4s forwards;
+                }
+                &:active .menu__conteneur__plat__carte9__prix{
+                    transition: 0.4s;
+                    right: 3.5rem;                   
+                }
+                &:active .menu__conteneur__plat__carte9__selection{
+                    transition: 0.4s;
+                    right: 0;
+                }
+                &:active .menu__conteneur__plat__carte9__selection i{
                     transform: rotate(360deg);
                     transition-delay: 1s;
                     transition: 0.5s;
