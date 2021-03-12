@@ -385,7 +385,6 @@ footer .footer i {
 
 .operation__section__carte:hover {
   background-color: #f2eafb;
-  border: 1px solid #f2eafb;
   -webkit-box-shadow: 3px 4px 12px grey;
           box-shadow: 3px 4px 12px grey;
 }
@@ -396,7 +395,6 @@ footer .footer i {
 
 .operation__section__carte:active {
   background-color: #f2eafb;
-  border: 1px solid #f2eafb;
   -webkit-box-shadow: 3px 4px 12px grey;
           box-shadow: 3px 4px 12px grey;
 }
@@ -653,8 +651,6 @@ footer .footer i {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 1rem;
-  -webkit-transition: all 0.4s forwards;
-  transition: all 0.4s forwards;
 }
 
 .menu__resto h2 {
@@ -855,8 +851,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte__selection i {
@@ -971,8 +965,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte1__selection i {
@@ -1087,8 +1079,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte2__selection i {
@@ -1203,8 +1193,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte3__selection i {
@@ -1319,8 +1307,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte4__selection i {
@@ -1435,8 +1421,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte5__selection i {
@@ -1551,8 +1535,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte6__selection i {
@@ -1667,8 +1649,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte7__selection i {
@@ -1783,8 +1763,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte8__selection i {
@@ -1899,8 +1877,6 @@ footer .footer i {
   right: -3.5rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: rotate(0) 0.5s;
-  transition: rotate(0) 0.5s;
 }
 
 .menu__conteneur__plat__carte9__selection i {
